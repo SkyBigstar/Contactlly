@@ -1,0 +1,132 @@
+body {
+	min-height:100vh;
+	display:flex;
+	#root {
+		flex-grow: 1;
+		display:flex;
+		flex-direction: column;
+	}
+}
+
+.navigation-bar {
+	background-color: #eee;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50vh;
+    font-size: 14px;
+	margin-left: auto;
+    margin-right: auto;
+	width: 70%;
+	min-width: 600px;
+}
+
+.navigation-bar-li {
+	color: rgb(151, 151, 151);
+    border-radius: 50vh;
+    padding: 10px 15px;
+    line-height: 1.5;
+	cursor: pointer;
+}
+.navigation-bar-ul{
+	display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: overlay;
+    white-space: nowrap;
+}
+.activate{	
+    background-color: #7c2fc9;
+	color:white;
+}
+.m_input_widget{
+	display: flex;
+}
+.first{
+	
+	margin:10px;
+	margin-left:100px;
+}
+.export_btn{
+	margin:10px;
+}
+
+.popmenu {
+	li {
+		a:hover {
+			color: rgba(116,16,162,1);
+		}
+	}
+}
+
+.items-center{
+	a:hover {
+		color: rgba(116,16,162,1);
+		background-color: rgba(116,16,162,0.04);
+	}
+	color: #666;
+	font-family: nunito, helveticaneue, helvetica neue, Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	line-height: 25px;
+}
+
+::-webkit-scrollbar:focus {
+	position: absolute;
+	right: 6px;
+	width: 5px;
+	opacity: 0;
+}
+
+::-webkit-scrollbar {
+	visibility: hidden;
+}
+
+
+
+::-webkit-scrollbar-thumb {
+	width: 3px;
+	border-radius: 7px;
+	opacity: 0;
+    transition: opacity .2s, background-color .3s;
+	background-color: #ddd;
+}
+
+
+.dashboard-sidebar h6{
+	padding: 11px 32px;
+	color:#7c2fc9
+}
+
+body{
+	overflow: hidden;
+}
+
+.word-used-wrapper {
+    font-size: 14px;
+    display: inline-block;
+    background: rgba(116,16,162,0.2);
+    color: rgba(116,16,162,1);
+    padding: 4px 10px;
+    border-radius: 50vh;
+}
+
+.dashboard-sidebar{
+	overflow-y: scroll;
+	height: calc(100vh - 82px);
+	flex: 0 0 257px;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .1);
+    z-index: 100;
+    transition: 0.3s;	
+}
+
+@media (max-width: 992px){
+.dashboard-sidebar {
+    display: none;
+}}
+
+.dashboard-sidebar ul li a{
+	padding: 11px 32px;
+}
+
